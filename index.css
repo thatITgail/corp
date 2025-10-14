@@ -106,7 +106,7 @@ button{
 
 /* Hero */
 .hero {
-  padding: 2rem; 
+  padding: 4rem; 
   background:#fff;
 }
 .hero-content {
@@ -258,10 +258,11 @@ button{
 .chatbox .bubble-user {
   background:#4F46E5; 
   color:#fff; 
-  padding:.6rem 1rem;
+  padding:.5rem;
   border-radius: 4px; 
   display:inline-block; 
   text-align: right;
+  text-wrap: inherit;
 }
 .user-circle{
   display: inline-block;
@@ -269,7 +270,7 @@ button{
   height: 14px;
   border-radius: 50%;
   background-color: #ccc; 
-  margin-left: .5rem;
+  margin-left: .25rem;
 }
 .features {
   display:grid; 
