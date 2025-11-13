@@ -118,6 +118,7 @@ button{
   top: 3%;
   left: 5%;
   max-width:600px;
+  margin-top: 1rem;
   background-color: #fff;
 }
 .hero-text h1 {
@@ -450,26 +451,7 @@ button{
   color: inherit;
   text-decoration: none;
 }
-.chat-container #chat-icon{
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  padding: .5rem;
-  border-radius: .5rem;
-  z-index: 1000;
-  animation: bounce 1.5s infinite;
-}
-#chat-icon:hover{
-  background-color: #4F46E5;
-}
-@keyframes bounce {
-  0%, 100%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(-10px);
-  }
-}
+
 
 /* Responsive */
 @media (max-width:768px) {

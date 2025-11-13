@@ -4,10 +4,9 @@ const company = document.getElementById("company");
 const message = document.getElementById("message");
 const form = document.querySelector(".contact-form");
 const navbar = document.querySelector(".nav-links");
+const contact = document.getElementById("contact");
 const navToggle = document.querySelectorAll(".menu-toggle");
-console.log(navToggle);
 const toggleBtn = document.querySelector(".toggle-mode");
-
 // Display navbar
 navToggle.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -15,10 +14,17 @@ navToggle.forEach((btn) => {
   })
 });
 
+// Link contact with tawk API
+contact.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (typeof Tawk_API !== undefined){
+    Tawk_API.maximize();
+  }
+})
+
 // Change theme
 // toggleBtn.addEventListener("click", () => {
-//   console.log(document.documentElement)
-//   document.documentElement.classList.toggle("dark-theme");
+//   body.classList.toggle("dark-theme");
 // })
 
 // Validate form
@@ -55,9 +61,3 @@ form.addEventListener("submit", (e) => {
     console.log("Message sent successfully")
   }
 });
-
-// window.addEventListener("scroll", () => {
-//   const icon = document.getElementById("chat-icon");
-//   icon.style.display = (window.screenY > 1000) ? "block" : "none";  
-//   // console.log(icon)
-// })
